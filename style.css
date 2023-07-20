@@ -532,6 +532,7 @@ a {
     flex-direction: column;
     padding: 5px;
     margin-top: 50px;
+    overflow: hidden;
   }
 
   .career-image {
