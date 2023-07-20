@@ -23,10 +23,6 @@ a {
   color: #3c354f;
 }
 
-h1 {
-  /* line-height: 0.1; */
-}
-
 .nav-bar {
   padding: 0px 100px;
   display: flex;
@@ -92,6 +88,11 @@ h1 {
 }
 
 .banner-text {
+  background-image: url("./images/Vector 2.png");
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,7 +116,10 @@ h1 {
   line-height: 0.8;
 }
 .banner-image img {
+  /* height: 85vh; */
+  max-width: 100%;
   height: 85vh;
+  display: block;
 }
 
 .btn {
@@ -170,7 +174,9 @@ h1 {
 }
 
 .about-img {
-  height: 40vh;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .about-btn {
@@ -183,6 +189,12 @@ h1 {
 
 .about-footer {
   text-align: end;
+}
+
+.about-footer p {
+  font-size: large;
+  font-weight: bold;
+  color: #3c354f;
 }
 
 /* /////////////////// @ Funny Heading */
@@ -425,6 +437,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: none;
   }
 
   .text-part ul {
@@ -440,6 +453,13 @@ h1 {
   .banner {
     display: flex;
     flex-direction: column;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .folow p {
+    white-space: nowrap;
   }
 
   .cards {
@@ -450,25 +470,79 @@ h1 {
   .about {
     display: flex;
     flex-direction: column;
+    padding: 0;
+    align-items: center;
   }
   .about-text {
     width: 100%;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-p {
+    text-align: center;
+  }
+  .about-footer {
+    text-align: center;
+  }
+
+  .funny-videos {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .play {
+    padding: 0;
+  }
+
+  .play-text {
+    padding: 0;
+    width: 100%;
+  }
+
+  .ph-1 {
+    line-height: 1;
+  }
+  .ph-2 {
+    line-height: 1;
   }
   .banner-image {
-    /* height: 25vh; */
-    width: 220px;
+    max-width: 100%;
+    height: auto;
+    display: block;
   }
 
   .play {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .play-text {
+    text-align: center;
   }
 
   .career {
     display: flex;
     flex-direction: column;
     padding: 5px;
+    margin-top: 50px;
+  }
+
+  .career-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .career-image-div {
+    display: flex;
+    justify-content: center;
   }
 
   .play-image-1 {
@@ -497,6 +571,40 @@ h1 {
     height: 30vh;
     /* transform: translateX(100px); */
     transform: translate(50px, 50px);
+  }
+
+  .play-textss {
+    width: 100%;
+  }
+
+  .career-text {
+    width: 100%;
+    /* padding: 10px; */
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer-nav li {
+    white-space: nowrap;
+    padding: 5px;
+  }
+
+  .footer-policy ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer-policy ul li {
+    white-space: nowrap;
+    padding: 5px;
   }
 }
 
